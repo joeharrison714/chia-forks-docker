@@ -31,7 +31,9 @@ for p in ${plots_dir//:/ }; do
     spare plots add -d ${p}
 done
 
-sed -i 's/localhost/127.0.0.1/g' ~/.spare/mainnet/config/config.yaml
+sed -i 's/localhost/127.0.0.1/g' ~/.spare-blockchain/mainnet/config/config.yaml
+
+spare configure -log-level INFO
 
 if [[ ${farmer} == 'true' ]]; then
   spare start farmer-only

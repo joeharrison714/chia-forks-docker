@@ -33,6 +33,8 @@ done
 
 sed -i 's/localhost/127.0.0.1/g' ~/.chaingreen/mainnet/config/config.yaml
 
+chaingreen configure -log-level INFO
+
 if [[ ${farmer} == 'true' ]]; then
   chaingreen start farmer-only
 elif [[ ${harvester} == 'true' ]]; then
