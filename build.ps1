@@ -6,3 +6,6 @@ docker push joeharrison714/flax-docker:latest
 
 docker build ./spare-docker --build-arg BRANCH=master -t joeharrison714/spare-docker
 docker push joeharrison714/spare-docker:latest
+
+docker build ./seno-docker --build-arg BRANCH=master -t joeharrison714/seno-docker
+docker push joeharrison714/seno-docker:latest
