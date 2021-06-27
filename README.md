@@ -10,3 +10,9 @@ docker pull joeharrison714/flax-docker
 
 # spare
 docker pull joeharrison714/spare-docker
+
+# seno
+docker pull joeharrison714/seno-docker
+
+# goji
+docker pull joeharrison714/goji-docker

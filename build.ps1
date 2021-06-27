@@ -9,3 +9,6 @@ docker push joeharrison714/spare-docker:latest
 
 docker build ./seno-docker --build-arg BRANCH=master -t joeharrison714/seno-docker
 docker push joeharrison714/seno-docker:latest
+
+docker build ./goji-docker --build-arg BRANCH=main -t joeharrison714/goji-docker
+docker push joeharrison714/goji-docker:latest
