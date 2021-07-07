@@ -19,6 +19,8 @@ elif [[ ${keys} == "copy" ]]; then
   else
     seno init -c ${ca}
   fi
+elif [[ ${keys} == "none" ]]; then
+  echo "Skipping key import."
 else
   seno keys add -f ${keys}
 fi
@@ -31,7 +33,7 @@ for p in ${plots_dir//:/ }; do
     seno plots add -d ${p}
 done
 
-sed -i 's/localhost/127.0.0.1/g' ~/.seno/mainnet/config/config.yaml
+sed -i 's/localhost/127.0.0.1/g' ~/.seno2/mainnet/config/config.yaml
 
 seno configure -log-level INFO
 
